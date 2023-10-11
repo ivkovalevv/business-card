@@ -337,8 +337,19 @@ p{
 
 .item-icon{
     width: clamp(15px, 2vw, 20px);
+    height: clamp(15px, 2vw, 20px);
     margin-right: clamp(3px, 2vw, 7px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
+
+.address{
+    background-image: url(../img/svg/address.svg);}
+.mail{
+    background-image: url(../img/svg/mail.svg);}
+.phone{
+    background-image: url(../img/svg/phone.svg);}
 
 .section-contacts__content-item-description{
     color: var(--color);
