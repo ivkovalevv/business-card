@@ -65,7 +65,9 @@ p{
 
 .btn{
     padding: 15px 20px;
-    background-color: var(--custon-color);
+    background: rgb(119,88,199);
+    background: linear-gradient(140deg, rgb(138, 109, 244, 1) 27%, rgba(108,72,215,1) 100%);
+    box-shadow: 0 4px 20px rgba(108,72,215,1);
     border-radius: 15px;
     cursor: pointer;
     font-size: var(--description-size-2);
@@ -305,7 +307,6 @@ p{
     width: 100%;
     height: fit-content;
     background-color: var(--color);
-    margin-top: clamp(15px, 5vw, 40px);
     padding-top: clamp(15px, 5vw, 40px);
     padding-bottom: clamp(15px, 5vw, 40px);
 }
@@ -409,11 +410,243 @@ p{
     overflow: hidden;
 }
 
+/* ORDER */
+
+.section-order{
+    width: 100%;
+    height: fit-content;
+    background-image: url(../img/back\ frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-order__container{
+    padding: 100px 0px 100px 0px;
+}
+
+.section-order__content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: clamp(10px, 5vw, 80px) clamp(10px, 5vw, 80px);
+    background: #ffffff08;
+    box-shadow: 0 4px 30px #ffffff08;
+    backdrop-filter: blur(220px);
+    -webkit-backdrop-filter: blur(220px);
+    border: 1px solid #ffffff08;
+}
+
+.section-order__heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: clamp(15px, 7vw, 20px);
+}
+
+.section-order__form-block{
+    width: 100%;
+    height: max-content;
+    background-color: var(--color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(10px, 5vw, 50px) clamp(10px, 5vw, 50px);
+}
+
+.section-order__form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-order__list{
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.section-order__item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.label{
+    color: var(--back-color);
+    margin-bottom: clamp(5px, 7vw, 10px);
+    margin-left: 10px;
+}
+
+.input{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    padding: clamp(5px, 5vw, 10px) clamp(5px, 5vw, 10px);
+    background: rgba(182, 185, 255, 1);
+    box-shadow: 0 4px 30px rgba(182, 185, 255, 1);
+    color: var(--back-color);
+}
+
+.input:focus{
+    outline: 2px solid rgba(182, 185, 255, 1);
+}
+
+/* SELECT */
+
+.select{
+    position: relative;
+    z-index: 5;
+}
+
+.select__back-drop{
+    position: fixed;
+    display: none;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.select__open .select__dropdown{
+    display: flex;
+    border: 1px solid var(--custon-color);
+}
+
+.select__open .select__input{
+    border: 1px solid var(--custon-color);
+}
+
+.select__open .select__back-drop{
+    display: block;
+}
+
+.select__open .select__input{
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select__input{
+    color: var(--back-color);
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(182, 185, 255, 1);
+    box-shadow: 0 4px 30px rgba(182, 185, 255, 1);
+    cursor: pointer;
+}
+
+.select__dropdown{
+    display: none;
+    position: absolute;
+    color: var(--back-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(182, 185, 255, 1);
+    overflow: hidden;
+}
+
+.select__list{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.select__item{
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.select__item:not(:first-child){
+    border-top: 1px solid var(--custon-color);
+}
+
+.select__item-selected{
+    background-color: var(--custon-color);
+    color: var(--color);
+}
+
+.select__item:hover{
+    background-color: var(--custon-color);
+    color: var(--color);
+}
+
+.select-text{
+    width: 80%;
+}
+
+.select-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* _________________________ */
+
+.btn-submit{
+    max-height: 40px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 25px;
+    background: rgb(119,88,199);
+    background: linear-gradient(140deg, rgb(138, 109, 244, 1) 27%, rgba(108,72,215,1) 100%);
+}
+
 /* MEDIA */
 
 @media (min-width: 1882px){
     .section-porfolio__content-item{
         margin-right: 30px;
+    }
+}
+
+@media (min-width: 1470px){
+    .section-order__list{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1468px){
+    .section-order__form{
+        justify-content: center;
+    }
+    
+    .section-order__list{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .section-order__item{
+        width: 40%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .input, .select__input{
+        width: 100%;
     }
 }
 
@@ -445,8 +678,41 @@ p{
     .section-contacts__content-map{
         width: 100%;
     }
+
+    .section-order__form{
+        justify-content: center;
+    }
+    
+    .section-order__list{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .section-order__item{
+        width: 40%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .input, .select__input{
+        width: 100%;
+    }
 }
 
+@media (max-width: 960px){
+    .section-order__item{
+        width: 100%;
+    }
+
+    .input, .select__input{
+        width: 100%;
+    }
+
+    .btn-submit{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 480px){
     .header{
