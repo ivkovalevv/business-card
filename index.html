@@ -121,8 +121,8 @@
                         <div class="swiper-pagination"></div>
                     
                         <!-- If we need navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -331,23 +331,32 @@
                 <h2 class="heading section-order__heading">
                     Оформить заказ
                 </h2>
+                <div class="section-order__success-block">
+                    <div class="section-order__success-img"></div>
+                    <h2 class="heading section-order__success-heading">
+                        Благодарю за оставленную заявку!
+                    </h2>
+                    <p class="description section-order__success-description">
+                        Я обязательно свяжусь с вами в ближайшее время.
+                    </p>
+                </div>
                 <div class="section-order__form-block">
                     <form method="post" class="section-order__form">
                         <div class="section-order__list">
                             <div class="section-order__item">
-                                <label for="name" class="label description">
+                                <label for="name" class="label label-name description">
                                     Имя
                                 </label>
                                 <input type="text" name="name" id="name" class="input" placeholder="Ваше имя">
                             </div>
                             <div class="section-order__item">
-                                <label for="mail" class="label description">
+                                <label for="mail" class="label label-mail description">
                                     E-mail
                                 </label>
                                 <input type="email" name="email" id="email" class="input" placeholder="example@gmail.com">
                             </div>
                             <div class="section-order__item">
-                                <label for="phone" class="label description">
+                                <label for="phone" class="label label-tel description">
                                     Телефон
                                 </label>
                                 <input type="tel" name="name" id="phone" class="input" placeholder="+7 (999) 999 99 99">
@@ -359,7 +368,7 @@
                                 <div id="select"></div>
                             </div>
                         </div>
-                        <button class="btn btn-submit">Отправить</button>
+                        <button id="orderBtn" class="btn btn-submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -367,11 +376,13 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 
     <script defer src="./js/index.js" type="text/javascript"></script>
     <script defer src="./js/select.js" type="text/javascript"></script>
     <script defer src="./js/swiper.js" type="text/javascript"></script>
-    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="./js/message.js" type="text/javascript"></script>
     <script defer src="./js/map.js" type="text/javascript"></script>
     
 </body>

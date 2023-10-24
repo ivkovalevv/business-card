@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
     loop: true,
 
     // How sliders in block
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
     
@@ -24,6 +24,7 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
+        clickable: true,
     },
   
     // Navigation arrows
@@ -34,5 +35,16 @@ const swiper = new Swiper('.swiper', {
 
     autoplay: {
         delay: 1000,
+        disableOnInteraction: false,
     },
+
+    breakpoints: {
+      960: {
+        slidesPerView: 3
+      }
+    },
+
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
   });

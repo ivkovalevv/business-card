@@ -258,7 +258,7 @@ p{
 .npm-icon{background-image: url(../img/svg/npm.svg);}
 .bootstrap-icon{background-image: url(../img/svg/bootstrap.svg);}
 .git-icon{background-image: url(../img/svg/git.svg);}
-.bem-icon{background-image: url(../img/bem.jpg); background-size: 107%; border-radius: 50%;}
+.bem-icon{background-image: url(../img/svg/bem.svg);}
 
 .swiper-slide__description{
     color: var(--back-color);
@@ -523,6 +523,39 @@ p{
     margin-bottom: clamp(15px, 7vw, 20px);
 }
 
+.section-order__success-block{
+    width: 100%;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visible{
+    display: flex;
+}
+
+.section-order__success-img{
+    width: 200px;
+    height: 150px;
+    background-image: url(../img/svg/success.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-order__success-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-order__success-description{
+    width: 100%;
+    text-align: center;
+}
+
 .section-order__form-block{
     width: 100%;
     height: max-content;
@@ -532,6 +565,10 @@ p{
     align-items: center;
     justify-content: center;
     padding: clamp(10px, 5vw, 50px) clamp(10px, 5vw, 50px);
+}
+
+.invisible{
+    display: none;
 }
 
 .section-order__form{
@@ -562,6 +599,11 @@ p{
     margin-left: 10px;
 }
 
+.label-invalide{
+    color: red;
+    font-size: 15px;
+}
+
 .input{
     width: 200px;
     height: 40px;
@@ -575,6 +617,11 @@ p{
 
 .input:focus{
     outline: 2px solid rgba(182, 185, 255, 1);
+}
+
+.input-invalide{
+    background-color: rgba(244, 151, 151, 0.595);
+    box-shadow: 0px 18px 20px 3px rgba(221, 44, 44, 0.1);
 }
 
 /* SELECT */
@@ -793,7 +840,7 @@ p{
     }
 
     .swiper {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -846,10 +893,6 @@ p{
         height: 30px;
     }
 
-    .running-line{
-        top: -3%;
-    }
-
     .section-contacts__content-item-socials{
         width: 70%;
     }
@@ -860,5 +903,9 @@ p{
 
     .section-skills__container{
         width: 100%;
+    }
+
+    .running-line{
+        top: -3%;
     }
 }
