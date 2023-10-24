@@ -259,6 +259,7 @@ p{
 .bootstrap-icon{background-image: url(../img/svg/bootstrap.svg);}
 .git-icon{background-image: url(../img/svg/git.svg);}
 .bem-icon{background-image: url(../img/svg/bem.svg);}
+.figma-icon{background-image: url(../img/svg/figma.svg);}
 
 .swiper-slide__description{
     color: var(--back-color);
@@ -741,6 +742,34 @@ p{
     background: linear-gradient(140deg, rgb(138, 109, 244, 1) 27%, rgba(108,72,215,1) 100%);
 }
 
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--back-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-top: 1px solid #cacaca;
+}
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__description{
+    font-size: 15px;
+}
+
+.footer__icon{
+    width: 30px;
+    height: 30px;
+}
+
 /* MEDIA */
 
 @media (min-width: 1882px){
@@ -907,5 +936,14 @@ p{
 
     .running-line{
         top: -3%;
+        transform: rotate(0deg) translateY(-10px);
+    }
+
+    .footer__content{
+        flex-direction: column;
+    }
+
+    .footer__description{
+        margin-bottom: 20px;
     }
 }
