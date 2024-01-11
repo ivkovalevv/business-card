@@ -108,9 +108,10 @@ const select = new Select('#select', {
     placeholder: 'Работа',
     selectedId: '1',
     data: [
-        {id: '1', value: 'Сайт-визитка'},
-        {id: '2', value: 'Лендинг'},
-        {id: '3', value: 'Многостраничный'},
+        {id: '1', value: 'Лендинг'},
+        {id: '2', value: 'Сайт-визитка'},
+        {id: '3', value: 'Инфосайт'},
+        {id: '4', value: 'Многостраничный'},
     ], 
     onSelect(item) {
         console.log('Selected item:', item)

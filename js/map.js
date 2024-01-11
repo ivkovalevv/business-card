@@ -18,7 +18,7 @@ function init(){
     var myGeoObject = new ymaps.GeoObject({
         geometry: {
             type: "Point", // тип геометрии - точка
-            coordinates: [59.926363, 30.318788] // координаты точки
+            coordinates: [59.926877, 30.316209] // координаты точки
         }
     });
 

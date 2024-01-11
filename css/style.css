@@ -93,8 +93,11 @@ p{
     justify-content: space-between;
 }
 
-.headier__heading{
+.header__heading{
     margin-right: 20px;
+    background: -webkit-linear-gradient(left, rgb(218, 210, 245), rgb(118, 84, 219));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header__list{
@@ -681,7 +684,7 @@ p{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
-    height: 120px;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     background-color: rgb(208, 210, 255);
@@ -723,11 +726,15 @@ p{
 }
 
 .select-icon{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-image: url("../img/svg/arrow-down.svg");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.fa-chevron-up{
+    transform: rotate(180deg);
 }
 
 /* _________________________ */
