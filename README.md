@@ -1,4 +1,4 @@
  
 Business card website
 
-https://ivkovalevv.github.io/businesscard/
+https://ivkovalevv.github.io/business-card/
